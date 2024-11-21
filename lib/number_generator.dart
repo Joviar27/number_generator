@@ -12,6 +12,10 @@ String generateNumberVariant1(int input){
 String generateNumberVariant2(int input){
   StringBuffer buffer = StringBuffer();
 
+  for(int i=1; i<=input; i++){
+    buffer.write(i.toString());
+    buffer.write(' ');
+  }
   for(int i=input; i>=1; i--){
     buffer.write(i.toString());
     buffer.write(' ');
